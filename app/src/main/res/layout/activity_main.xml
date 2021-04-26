@@ -1,0 +1,324 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity" android:background="@color/white"
+   android:paddingRight="40dp" android:paddingLeft="40dp" android:paddingTop="30dp" android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="NIM :"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:inputType="text"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <EditText
+        android:id="@+id/editNIM"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Religion :"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <Spinner
+        android:id="@+id/spnrReligion"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:entries="@array/Agama"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender :"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/RGroup">
+
+        <RadioButton
+            android:id="@+id/rbMan"
+            android:layout_width="98dp"
+            android:layout_height="45dp"
+            android:text="Male"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <RadioButton
+            android:id="@+id/rbWoman"
+            android:layout_width="123dp"
+            android:layout_height="43dp"
+            android:text="Female"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="230dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby :"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbMusic"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:text="Music"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="391dp" />
+
+        <CheckBox
+            android:id="@+id/cbFootball"
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:text="Football"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="392dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cbTravelling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travelling"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="454dp" />
+
+        <CheckBox
+            android:id="@+id/cbGaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gaming"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="454dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:onClick="BtnView"
+            android:text="View"
+            tools:ignore="MissingConstraints,OnClick" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:text="Exit" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text=" Result Display : "
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM	:"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="656dp" />
+
+        <TextView
+            android:id="@+id/vNIM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name	:"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="628dp" />
+
+        <TextView android:id="@+id/vName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Religion :"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="710dp" />
+
+        <TextView
+            android:id="@+id/vReligion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender :"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="683dp" />
+
+        <TextView
+            android:id="@+id/vGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobby	:"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="738dp" />
+
+        <TextView
+            android:id="@+id/vHobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+
+    </RadioGroup>
+
+</LinearLayout>

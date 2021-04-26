@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UTS_MobileComputing</string>
+    <string-array name="Agama">
+        <item >Islam</item>
+        <item >Kristen</item>
+        <item >Budha</item>
+        <item >Hindu</item>
+        <item >Konghuchu</item>
+    </string-array>
+
+</resources>
